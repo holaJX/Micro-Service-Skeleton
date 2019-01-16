@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-modules" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-modules/mss-resource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-modules/mss-transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-modules/mss-upms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-oauth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mss-upms" charset="UTF-8" />
+  </component>
+</project>

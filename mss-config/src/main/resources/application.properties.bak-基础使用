@@ -1,0 +1,10 @@
+server.port = 8001
+server.tomcat.uri-encoding = UTF-8
+
+spring.application.name=configServer
+spring.profiles.active=subversion
+spring.cloud.config.server.svn.uri=http://localhost:1080/AgriculturalWaterInformatization/trunk/Micro-Service-Skeleton/
+spring.cloud.config.server.svn.username=lihonglang
+spring.cloud.config.server.svn.password=localhost
+spring.cloud.config.server.default-label=configfiletest
+spring.cloud.config.enabled=true

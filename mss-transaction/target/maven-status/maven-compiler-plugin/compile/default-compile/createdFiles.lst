@@ -1,0 +1,3 @@
+com\microservice\skeleton\rabbitmq\service\rabbitListener\RabbitConsumer.class
+com\microservice\skeleton\rabbitmq\TransactionApplication.class
+com\microservice\skeleton\rabbitmq\config\RabbitConfig.class

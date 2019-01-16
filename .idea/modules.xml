@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mss-oauth/Micro-Service-Skeleton-Auth.iml" filepath="$PROJECT_DIR$/mss-oauth/Micro-Service-Skeleton-Auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-gateway/Micro-Service-Skeleton-Gateway.iml" filepath="$PROJECT_DIR$/mss-gateway/Micro-Service-Skeleton-Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-monitor/Micro-Service-Skeleton-Monitor.iml" filepath="$PROJECT_DIR$/mss-monitor/Micro-Service-Skeleton-Monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Micro-Service-Skeleton-Parent.iml" filepath="$PROJECT_DIR$/Micro-Service-Skeleton-Parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-eureka/Micro-Service-Skeleton-Register.iml" filepath="$PROJECT_DIR$/mss-eureka/Micro-Service-Skeleton-Register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-transaction/Micro-Service-Skeleton-mss-transaction.iml" filepath="$PROJECT_DIR$/mss-transaction/Micro-Service-Skeleton-mss-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-upms/microservice.skeleton.upms.iml" filepath="$PROJECT_DIR$/mss-upms/microservice.skeleton.upms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mss-common/mss-common.iml" filepath="$PROJECT_DIR$/mss-common/mss-common.iml" />
+    </modules>
+  </component>
+</project>

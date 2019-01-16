@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: mss-gateway
+server:
+  port: 9030
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    lease-renewal-interval-in-seconds: 1 # 心跳检测检测与续约时间
+    lease-expiration-duration-in-seconds: 2 # 测试时将值设置设置小些，保证服务关闭后注册中心能及时踢出服
+  client:
+      service-url:
+        defaultZone: http://mss-eureka:9010/eureka/
+zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  routes:
+    uaa:
+      path: /uaa/**
+      strip-prefix: true
+      sensitiveHeaders:
+      serviceId: authcenter
+    upms:
+      path: /upms/**
+      strip-prefix: true
+      sensitiveHeaders:
+      serviceId: mss-upms
+management:
+  security:
+    enabled: false
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:9030/uaa/oauth/token #网关的地址
+      user-authorization-uri: http://localhost:9030/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:9060/user
+      prefer-token-info: false
+
+#    resource:
+#      user-info-uri:  http://localhost:9060/upms/user
+#      prefer-token-info: false
+##############end#####################
+####超时配置####
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  ActiveConnectionsLimit: 2147483647
+  eureka:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 600000
+###超时配置###

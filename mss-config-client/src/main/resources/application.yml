@@ -1,0 +1,9 @@
+server:
+  port: 8002
+  tomcat:
+    uri-encoding: utf-8
+    
+#profile: test
+
+    
+

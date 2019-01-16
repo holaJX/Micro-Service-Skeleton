@@ -1,0 +1,22 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: mss-eureka
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    time-zone: GMT+8
+eureka:
+  instance:
+    hostname: mss-eureka #eureka服务端实例名称
+  client:
+    register-with-eureka: false  #false表示服务注册中心不注册自己
+    fetch-registry: false        #表示自己端就是注册中心，我的职责就是维护实例，不需要去检索服务
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #设置与eureka server 交互的地址查询服务和注册服务依赖这个地址
+  server:
+  #### 清理间隔（单位毫秒，默认是60*1000），开发环境设置如下可快速移除不可用的服务
+    eviction-interval-timer-in-ms: 5000
+    enable-self-preservation: false

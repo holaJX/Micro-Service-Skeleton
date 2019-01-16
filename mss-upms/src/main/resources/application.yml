@@ -1,0 +1,24 @@
+server:
+  port: 9021
+spring:
+  application:
+    name: mss-upms
+  datasource:
+      url: jdbc:mysql://localhost:4306/nsinformation?useUnicode=true&characterEncoding=utf-8
+      username: nsinformation
+      password: ***
+      druid:
+        driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  instance:
+    prefer-ip-address: true #访问路径可以显示IP注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ##续约更新时间间隔设置5秒，m默认30s
+    lease-renewal-interval-in-seconds: 1
+    ##续约到期时间10秒，默认是90秒
+    lease-expiration-duration-in-seconds: 2
+  client:
+      service-url:
+        defaultZone: http://mss-eureka:9010/eureka/   #,http://mss-eureka2:9011/eureka/
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Micro-Service-Skeleton-Auth" />
+        <module name="Micro-Service-Skeleton-Gateway" />
+        <module name="Micro-Service-Skeleton-Monitor" />
+        <module name="Micro-Service-Skeleton-mss-transaction" />
+        <module name="Micro-Service-Skeleton-Register" />
+        <module name="microservice.skeleton.upms" />
+        <module name="mss-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Micro-Service-Skeleton-Auth" target="1.8" />
+      <module name="Micro-Service-Skeleton-Gateway" target="1.8" />
+      <module name="Micro-Service-Skeleton-modules" target="1.8" />
+      <module name="Micro-Service-Skeleton-Monitor" target="1.8" />
+      <module name="Micro-Service-Skeleton-mss-transaction" target="1.8" />
+      <module name="Micro-Service-Skeleton-Parent" target="1.8" />
+      <module name="Micro-Service-Skeleton-Register" target="1.8" />
+      <module name="Micro-Service-Skeleton-Resource" target="1.8" />
+      <module name="microservice.skeleton.upms" target="1.8" />
+      <module name="mss-common" target="1.8" />
+      <module name="mss-transaction" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

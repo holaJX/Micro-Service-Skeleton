@@ -1,0 +1,29 @@
+
+server:
+  port: 9070
+spring:
+  application:
+    name: mss-transaction
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.55.28.217:4306/nsinformation?useUnicode=true&characterEncoding=utf-8
+    username: nsinformation
+    password: j2Q44znidmsWx1QlMCXB
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ##续约更新时间间隔设置5秒，m默认30s
+    lease-renewal-interval-in-seconds: 1
+    ##续约到期时间10秒，默认是90秒
+    lease-expiration-duration-in-seconds: 2
+  client:
+      service-url:
+        defaultZone: http://mss-eureka:9010/eureka/
